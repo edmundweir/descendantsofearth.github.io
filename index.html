@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Home Page </title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet"> 
+	<link href="main.css" rel="stylesheet" type="text/css"/>
+	<meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
+</head>
+<body>
+	<div class="banner">
+		<video autoplay="" muted="false" loop="" type="video/mp4">
+			<source src="Media/BackgroundClip.mp4" type="video/mp4">
+		</video>
+		<div id="scrollarea" class="content">
+			<header>
+				<div class="logo"> <img src="Media/DOE_TMP.gif"></div>
+			</header>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div id="textbox" class="content-wrapper" style="background-image: url('Media/Dialogue4.png'); background-size: 100% 100%;">
+				<div id="progressbar"></div>
+				<div id="scrollpath"></div>
+				<div class="text-wrapper">
+					<p>
+					ANCESTOR, WE NEED YOUR HELP. THE YEAR IS 2412 AND THE CLIMATE HAS CHANGED.<br><br><strong>EARTH IS DYING.</strong><br><br>HOWEVER, HOPE IS NOT LOST — WE CAN STILL CORRECT THE TIMELINE.
+					</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="content-wrapper" style="background-image: url('Media/Dialogue4.png'); background-size: 100% 100%;">
+				<div class="text-wrapper">
+					<p>	
+					BY TAKING REAL ENVIRONMENTAL ACTION IN YOUR TIME YOU CAN EARN RESOURCES FOR YOUR DESCENDANTS.
+					<br><br>
+					USING THESE RESOURCES, WE CAN REBUILD THE EARTH.
+					</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="content-wrapper" style="background-image: url('Media/Dialogue4.png'); background-size: 100% 100%;">
+				<div class="text-wrapper">
+					<p>
+					TO HELP YOU ON THIS JOURNEY, WE ARE HACKING INTO THE APP STORES TO BRING YOU A MOBILE APP THAT CONTAINS A RANGE OF ENVIRONMENTAL ACTION.
+					<br><br>
+					DESCENDANTS OF EARTH ARRIVING:<br><strong>MARCH, 2021.</strong>
+					</p>
+				</div>
+			</div>
+			<br><br><br><br>
+			<footer>
+				Copyright Descendants Of Earth 2020.
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - window.innerHeight;
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset / totalHeight) * 100;
+			progress.style.height = progressHeight + "%";
+		}
+	</script>
+	<script>    
+      textFit(document.querySelectorAll('.text-wrapper'), {
+		    minFontSize: 6,
+			maxFontSize: 200,
+		    alignHoriz: true,
+		    alignVert: true,
+		    detectMultiLine: true,
+		    alignVertWithFlexbox: true,
+		}); 
+    </script>
+</body>
+</html>
