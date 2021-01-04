@@ -9,13 +9,6 @@ body {
 	width: 100%;
 	height: auto;
 }
-body .banner .body_start z	{
-	height: 100%;
-	text-align: left;
-	vertical-align:top;
-	margin: 0;
-
-}
 header {
 	padding-top: 10vh;
 }
@@ -52,15 +45,12 @@ footer {
 	scrollbar-width: none;
 	margin: 20%;
 }
-.banner .content h1 {
-	margin: 5vw;
-}
 
 .content-wrapper {
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 50vh;
+	height: 150vh;
 	display: block;
 }
 .text-wrapper {
@@ -76,10 +66,10 @@ footer {
 	vertical-align: middle;
 	color: yellow;
 	font-family: 'Quantico', sans-serif;
-	padding: 3vh 3vw 12vh 3vw;
+	padding: 3vh 3vw 6vh 3vw;
 }
 .logo img {
-	width: 50vw;
+	width: 100%;
 	height: auto;
 }
 
